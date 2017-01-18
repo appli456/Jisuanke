@@ -85,7 +85,8 @@ namespace li_algorithm
 	 */
 	unsigned AdjacencyList::get_number_of_communicating_branch()
 	{
-		
+		unsigned int result = 0;
+		return result;
 	}
 
 
@@ -102,7 +103,7 @@ namespace li_algorithm
 		}
 	}
 
-	unsigned AdjacencyList::get_start_point()
+	unsigned AdjacencyList::get_start_point() const
 	{
 		return start_point;
 	}

@@ -15,7 +15,7 @@ namespace li_algorithm
 		AdjacencyList(unsigned row, bool if_direction, unsigned start_point);
 		~AdjacencyList();
 
-		static unsigned get_start_point();
+		unsigned get_start_point() const;
 		unsigned get_row() const;
 		bool push(unsigned x, unsigned y) const; // Ìí¼Óµã
 		bool push(Point p) const;
@@ -28,6 +28,6 @@ namespace li_algorithm
 		unordered_map<unsigned, set<unsigned>*> adjacency_list;
 		bool if_direction;
 		unsigned row;
-		static unsigned start_point;
+		unsigned start_point;
 	};
 }
