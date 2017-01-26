@@ -107,7 +107,7 @@ namespace li_algorithm
 	unsigned AdjacencyList::get_number_of_communicating_branch()
 	{
 		unsigned int result = 0;
-		std::set<unsigned int>visited_node;
+		set<unsigned int>visited_node;
 		size_t size = adjacency_list.size();
 		for (unsigned int i = 0; i < size; ++i)
 		{

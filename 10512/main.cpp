@@ -49,7 +49,7 @@ int main()
 			AdjacencyList* children_graph = new AdjacencyList(p.y - p.x + 1, false, p.x);
 
 			adjacency_list->get_children_graph(children_graph);
-			children_graph->print();
+			// children_graph->print();
 			communicating_branchs.at(i).push_back(
 				(*children_graph).get_number_of_communicating_branch()
 			);
@@ -74,7 +74,7 @@ int main()
 	}
 
 
-	system("pause");
+	// system("pause");
     return 0;
 }
 
